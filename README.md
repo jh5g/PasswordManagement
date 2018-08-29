@@ -8,4 +8,8 @@ Plans:
 
 * Use WPF to colour the screen, using some wavy patter or sumat, based on how secure the password is
 
+* Pin controls using grids
+
+* Make LengthSlideLabeller.IsEnabled = false
+
 * Add secure Password STorage??
