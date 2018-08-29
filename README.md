@@ -6,6 +6,6 @@ To use it run the program, click the "Generator" button, then choose the option 
 
 Plans:
 
-*Use WPF to colour the screen, using some wavy patter or sumat, based on how secure the password is
+* Use WPF to colour the screen, using some wavy patter or sumat, based on how secure the password is
 
-*Add secure Password STorage??
+* Add secure Password STorage??
