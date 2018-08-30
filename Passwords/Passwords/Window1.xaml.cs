@@ -64,6 +64,7 @@ namespace Passwords
                     LengthVal += 1;
                 }
             }
+            Clipboard.SetText(PasswordField.Text);
             ScoreBox.Text = GetPasswordRating().ToString();
             int score = GetPasswordRating();
             if(score >= 90)
