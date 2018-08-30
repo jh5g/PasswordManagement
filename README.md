@@ -2,14 +2,12 @@
 
 This a C#.NET project using WPF. It can currently be used to generate random passwords, with varying length from 5-25; capital letters; punctuation of many varieties; and numerals.
 
-To use it run the program, click the "Generator" button, then choose the option you want for your password, then hit the "Generate!" button. Finally copy the password from the text box.
+To use it run the program, click the "Generator" button, then choose the option you want for your password, then hit the "Generate!" button. The password will now be in the clipboard.
+
+A score will also appear next to the generated password, along with a clour indicating its security, the optimal colour is Dark Olive green, the best score possible, so far, is 260.
 
 Plans:
 
-* Use WPF to colour the screen, using some wavy patter or sumat, based on how secure the password is
-
 * Pin controls using grids
-
-* Make LengthSlideLabeller.IsEnabled = false
 
 * Add secure Password STorage??
