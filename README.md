@@ -10,4 +10,6 @@ Plans:
 
 * Pin controls using grids
 
-* Add secure Password STorage??
+* Add secure Password Storage??
+
+* Use HaveIBeenPwned API to add identity security
