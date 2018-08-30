@@ -6,14 +6,16 @@
         xmlns:local="clr-namespace:Passwords"
         mc:Ignorable="d"
         Title="Hougie's Password Manager: Generator" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="GenerateButton" Content="Gernate!" HorizontalAlignment="Left" Margin="326,168,0,0" VerticalAlignment="Top" Width="75" Click="GenerateButton_Click"/>
-        <CheckBox x:Name="CapCheck" Content="Capitals" HorizontalAlignment="Left" Margin="449,168,0,0" VerticalAlignment="Top" Height="20" IsChecked="True"/>
-        <CheckBox x:Name="PuncCheck" Content="Punctuation" HorizontalAlignment="Left" Margin="449,148,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <CheckBox x:Name="NumCheck" Content="Numbers" HorizontalAlignment="Left" Margin="449,188,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <Slider x:Name="LenghtSlide" HorizontalAlignment="Left" Margin="185,85,0,0" VerticalAlignment="Top" Width="347" Maximum="25" Minimum="5" ValueChanged="LenghtSlide_ValueChanged" IsSnapToTickEnabled="True"/>
-        <TextBox x:Name="LengthSlideLabeller" HorizontalAlignment="Left" Height="23" Margin="222,59,0,0" TextWrapping="Wrap" Text="Length is 5" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="PasswordField" HorizontalAlignment="Left" Height="20" Margin="70,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" IsReadOnly="True"/>
+    <Grid RenderTransformOrigin="0.358,0.499">
+        <Button x:Name="GenerateButton" Content="Gernate!" HorizontalAlignment="Left" Margin="426.75,199.934,0,0" VerticalAlignment="Top" Width="75" Click="GenerateButton_Click"/>
+        <CheckBox x:Name="CapCheck" Content="Capitals" HorizontalAlignment="Left" Margin="517.814,206.305,0,0" VerticalAlignment="Top" Height="24.571" IsChecked="True" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="PuncCheck" Content="Punctuation" HorizontalAlignment="Left" Margin="517.814,181.732,0,0" VerticalAlignment="Top" IsChecked="True" Height="18.549" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="NumCheck" Content="Numbers" HorizontalAlignment="Left" Margin="517.814,230.875,0,0" VerticalAlignment="Top" IsChecked="True" Height="18.549" Grid.ColumnSpan="2"/>
+        <Slider x:Name="LenghtSlide" HorizontalAlignment="Left" Margin="151.859,162.811,0,0" VerticalAlignment="Top" Width="349.891" Maximum="25" Minimum="5" ValueChanged="LenghtSlide_ValueChanged" IsSnapToTickEnabled="True" Value="10"/>
+        <TextBox x:Name="LengthSlideLabeller" HorizontalAlignment="Left" Height="23" Margin="151.859,123.767,0,0" TextWrapping="Wrap" Text="Length is 10" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="PasswordField" HorizontalAlignment="Left" Height="19.96" Margin="151.859,199.934,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" IsReadOnly="True"/>
+        <Rectangle x:Name="PasswordRating" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="19.96" Margin="85.047,199.934,0,0" Stroke="Black" VerticalAlignment="Top" Width="58.921"/>
+        <TextBlock x:Name="ScoreBox" HorizontalAlignment="Left" Margin="85.047,201.934,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58.921"/>
 
     </Grid>
 </Window>

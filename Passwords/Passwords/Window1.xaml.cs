@@ -63,7 +63,29 @@ namespace Passwords
                 {
                     LengthVal += 1;
                 }
-            }  
+            }
+            ScoreBox.Text = GetPasswordRating().ToString();
+            int score = GetPasswordRating();
+            if(score >= 90)
+            {
+                PasswordRating.Fill = new SolidColorBrush(Colors.DarkOliveGreen);
+            }
+            else if (score >= 80)
+            {
+                PasswordRating.Fill = new SolidColorBrush(Colors.LightGreen);
+            }
+            else if (score >= 70)
+            {
+                PasswordRating.Fill = new SolidColorBrush(Colors.Yellow);
+            }
+            else if (score >= 50)
+            {
+                PasswordRating.Fill = new SolidColorBrush(Colors.Orange);
+            }
+            else
+            {
+                PasswordRating.Fill = new SolidColorBrush(Colors.Red);
+            }
         }
 
         private void LenghtSlide_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -73,6 +95,22 @@ namespace Passwords
                 LengthSlideLabeller.Text = "Length is " + LenghtSlide.Value.ToString();
             }
             
+        }
+        public int GetPasswordRating()
+        {
+            int Rating = 0;
+            string Password = PasswordField.Text;
+            Rating = Rating + Password.Length * 4 + 4 * Password.Where(c => char.IsPunctuation(c)).ToArray().Length + 4 * Password.Where(c => char.IsNumber(c)).ToArray().Length + 2 * (Password.Length - Password.Where(c => char.IsLower(c)).ToArray().Length) + 2 * (Password.Length - Password.Where(c => char.IsUpper(c)).ToArray().Length);
+            /*Rating = Rating + 2 * (Password.Length - Password.Where(c => char.IsUpper(c)).ToArray().Length);
+            Rating = Rating + 2 * (Password.Length - Password.Where(c => char.IsLower(c)).ToArray().Length);
+            Rating = Rating + 4 * Password.Where(c => char.IsNumber(c)).ToArray().Length;
+            Rating = Rating + 4 * Password.Where(c => char.IsPunctuation(c)).ToArray().Length; */
+            if (Password.Length >= 8)
+            {
+                Rating += 5;
+            }
+
+            return Rating;
         }
     }
 }
