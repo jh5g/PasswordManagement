@@ -1,0 +1,18 @@
+﻿<Window x:Class="Passwords.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Passwords"
+        mc:Ignorable="d"
+        Title="Settings" Height="278.327" Width="390.862">
+    <Grid>
+        <TextBox x:Name="EmailField" HorizontalAlignment="Left" Height="23" Margin="29,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Initialized="EmailField_Initialized"/>
+        <Button x:Name="SaveButton" Content="Save E-mail" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,56,0,0" Height="23" Click="SaveButton_Click"/>
+        <Rectangle x:Name="EmailStoredRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="259,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="23" RenderTransformOrigin="0.302,0.16" Initialized="EmailStoredRectangle_Initialized"/>
+        <TextBox x:Name="EmailField_Copy" HorizontalAlignment="Left" Height="23" Margin="29,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Initialized="EmailField_Initialized"/>
+        <Button x:Name="SaveButton_Copy" Content="Save E-mail 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,119,0,0" Height="23" Click="SaveButton_Copy_Click"/>
+        <Rectangle x:Name="EmailStoredRectangle_Copy" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="259,119,0,0" Stroke="Black" VerticalAlignment="Top" Width="23" RenderTransformOrigin="0.302,0.16" Initialized="EmailStoredRectangle_Copy_Initialized"/>
+
+    </Grid>
+</Window>

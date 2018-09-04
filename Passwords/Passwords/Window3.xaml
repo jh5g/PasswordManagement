@@ -1,0 +1,14 @@
+﻿<Window x:Class="Passwords.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Passwords"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid x:Name="DataFromLabel">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Data provided by haveibeenpwned.com" VerticalAlignment="Top" Margin="573,395,0,0"/>
+        <Button x:Name="Settings" Content="Settings" HorizontalAlignment="Left" Height="25" Margin="701,10,0,0" VerticalAlignment="Top" Width="69" Click="Settings_Click"/>
+
+    </Grid>
+</Window>
