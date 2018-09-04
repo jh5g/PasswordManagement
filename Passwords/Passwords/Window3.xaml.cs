@@ -10,37 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Passwords
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window3 : Window
     {
-        public MainWindow()
+        public Window3()
         {
             InitializeComponent();
         }
 
-        private void GeneratorOpen_Click(object sender, RoutedEventArgs e)
-        {
-            Window1 window1 = new Window1();
-            window1.Show();
-        }
-
-        private void OpenSettings_Click(object sender, RoutedEventArgs e)
+        private void Settings_Click(object sender, RoutedEventArgs e)
         {
             Window2 window2 = new Window2();
             window2.Show();
-        }
-
-        private void BreachOpen_Click(object sender, RoutedEventArgs e)
-        {
-            Window3 window3 = new Window3();
-            window3.Show();
         }
     }
 }
